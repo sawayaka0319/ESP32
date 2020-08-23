@@ -1,12 +1,11 @@
 # ここにコードを書いてね :-
-from machine import Pin
+import machine
 import time
 
-pin = Pin(2, Pin.OUT)
+pin = machine.Pin(27, machine.Pin.OUT)
 
 while True:
     pin.on()
     time.sleep(1)
     pin.off()
     time.sleep(1)
-
