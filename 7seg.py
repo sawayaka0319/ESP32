@@ -11,7 +11,7 @@ pattern = ((0,0,0,0,0,0,1,1),(1,0,0,1,1,1,1,1),(0,0,1,0,0,1,0,1),(0,0,0,0,1,1,0,
 while True:
     # 7seg A-G,DP on:0 off:1
     for i in [0,1,2,3,4,5,6,7]:
-        Pin(pin_no[i], Pin.OUT).value(pattern[9][i])
+        Pin(pin_no[i], Pin.OUT).value(pattern[6][i])
     # 7seg com1-4 on:1 off:0
     for l in pin_com:
         Pin(l, Pin.OUT).value(1)
